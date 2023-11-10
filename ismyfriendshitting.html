@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Is my friend in the bathroom?</title>
+	<style>
+		button {
+			background-color: brown;
+			color: white;
+			font-size: 24px;
+			padding: 10px 20px;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: darkgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1>Is my friend in the bathroom?</h1>
+	<button id="statusButton">Check Status</button>
+
+	<script>
+		document.getElementById("statusButton").addEventListener("click", function(){
+			var randomNum = Math.random();
+			if (randomNum < 0.5) {
+				alert("Your friend is in the bathroom!");
+			} else {
+				alert("Nope, your friend is not in the bathroom.");
+			}
+		});
+	</script>
+</body>
+</html>
